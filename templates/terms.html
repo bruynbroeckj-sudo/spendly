@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+
+{% block title %}Terms and Conditions — Spendly{% endblock %}
+
+{% block head %}
+<style>
+    .terms-section {
+        padding: 4rem 2rem 5rem;
+    }
+
+    .terms-inner {
+        max-width: 760px;
+        margin: 0 auto;
+    }
+
+    .terms-badge {
+        display: inline-block;
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        padding: 0.35rem 0.85rem;
+        border-radius: 999px;
+        background: var(--accent-light);
+        color: var(--accent);
+        margin-bottom: 1.5rem;
+    }
+
+    .terms-title {
+        font-family: var(--font-display);
+        font-size: clamp(2rem, 4vw, 3rem);
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        color: var(--ink);
+        margin-bottom: 0.75rem;
+    }
+
+    .terms-updated {
+        font-size: 0.85rem;
+        color: var(--ink-faint);
+        margin-bottom: 2.5rem;
+    }
+
+    .terms-card {
+        background: var(--paper-card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-md);
+        padding: 1.75rem 2rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .terms-card h2 {
+        font-family: var(--font-display);
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: var(--ink);
+        margin-bottom: 0.75rem;
+    }
+
+    .terms-card p {
+        font-size: 0.95rem;
+        color: var(--ink-muted);
+        line-height: 1.7;
+    }
+
+    @media (max-width: 600px) {
+        .terms-section { padding: 3rem 1rem 4rem; }
+        .terms-card { padding: 1.5rem; }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<section class="terms-section">
+    <div class="terms-inner">
+        <div class="terms-badge">Legal</div>
+        <h1 class="terms-title">Terms and Conditions</h1>
+        <p class="terms-updated">Last updated: November 2026</p>
+
+        <div class="terms-card">
+            <h2>1. Acceptance of Terms</h2>
+            <p>By creating an account or using Spendly, you agree to be bound by these Terms and Conditions. If you do not agree, please do not use the service.</p>
+        </div>
+
+        <div class="terms-card">
+            <h2>2. Use of Service</h2>
+            <p>Spendly is a personal expense tracking tool. You agree to use it only for lawful purposes, to provide accurate account information, and to keep your login credentials secure. You are responsible for all activity under your account. You may not attempt to disrupt the service, access other users' data, or use the service in any way that violates applicable law.</p>
+        </div>
+
+        <div class="terms-card">
+            <h2>3. User Data</h2>
+            <p>You retain ownership of the expense data you enter into Spendly. We store this data solely to provide the service to you, and we do not sell it to third parties. You may request deletion of your account and associated data at any time.</p>
+        </div>
+
+        <div class="terms-card">
+            <h2>4. Limitations of Liability</h2>
+            <p>Spendly is provided "as is" without warranties of any kind. It is a tracking tool and does not provide financial, tax, or legal advice. To the fullest extent permitted by law, Spendly and its operators are not liable for any indirect, incidental, or consequential damages, or for any loss of data, arising from your use of the service.</p>
+        </div>
+
+        <div class="terms-card">
+            <h2>5. Changes to Terms</h2>
+            <p>We may update these Terms from time to time. When we do, we will revise the "Last updated" date above. Continued use of Spendly after changes take effect means you accept the revised Terms.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}
