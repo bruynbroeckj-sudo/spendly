@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+
+{% block title %}Privacy Policy — Spendly{% endblock %}
+
+{% block head %}
+<style>
+    .terms-section {
+        padding: 4rem 2rem 5rem;
+    }
+
+    .terms-inner {
+        max-width: 760px;
+        margin: 0 auto;
+    }
+
+    .terms-badge {
+        display: inline-block;
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        padding: 0.35rem 0.85rem;
+        border-radius: 999px;
+        background: var(--accent-light);
+        color: var(--accent);
+        margin-bottom: 1.5rem;
+    }
+
+    .terms-title {
+        font-family: var(--font-display);
+        font-size: clamp(2rem, 4vw, 3rem);
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        color: var(--ink);
+        margin-bottom: 0.75rem;
+    }
+
+    .terms-updated {
+        font-size: 0.85rem;
+        color: var(--ink-faint);
+        margin-bottom: 2.5rem;
+    }
+
+    .terms-card {
+        background: var(--paper-card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-md);
+        padding: 1.75rem 2rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .terms-card h2 {
+        font-family: var(--font-display);
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: var(--ink);
+        margin-bottom: 0.75rem;
+    }
+
+    .terms-card p {
+        font-size: 0.95rem;
+        color: var(--ink-muted);
+        line-height: 1.7;
+    }
+
+    @media (max-width: 600px) {
+        .terms-section { padding: 3rem 1rem 4rem; }
+        .terms-card { padding: 1.5rem; }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<section class="terms-section">
+    <div class="terms-inner">
+        <div class="terms-badge">Legal</div>
+        <h1 class="terms-title">Privacy Policy</h1>
+        <p class="terms-updated">Last updated: November 2026</p>
+
+        <div class="terms-card">
+            <h2>1. Data We Collect</h2>
+            <p>We collect the information you provide when you create an account, such as your name and email address, and the expense data you enter, including amounts, categories, dates, and descriptions. We may also collect basic technical information, such as browser type, to keep the service working properly.</p>
+        </div>
+
+        <div class="terms-card">
+            <h2>2. How We Use Your Data</h2>
+            <p>Your data is used to provide and improve Spendly: to show your expenses, generate summaries, and keep your account secure. We do not sell your personal information or use your expense data for advertising.</p>
+        </div>
+
+        <div class="terms-card">
+            <h2>3. Data Storage</h2>
+            <p>Your data is stored on secure servers and retained for as long as your account is active. We take reasonable measures to protect it from unauthorized access, loss, or misuse. If you delete your account, your personal and expense data will be removed from our systems.</p>
+        </div>
+
+        <div class="terms-card">
+            <h2>4. Third Party Services</h2>
+            <p>Spendly may use third-party services, such as hosting providers and web fonts, to operate. These providers may process limited technical data on our behalf. We do not share your expense data with third parties for their own purposes, except where required by law.</p>
+        </div>
+
+        <div class="terms-card">
+            <h2>5. Contact Us</h2>
+            <p>If you have questions about this Privacy Policy or want to request access to, correction of, or deletion of your data, please contact us at support@spendly.example.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}
